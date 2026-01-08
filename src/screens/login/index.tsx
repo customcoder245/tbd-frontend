@@ -51,7 +51,7 @@ const Login = () => {
       clearErrors("root"); // Clear previous server errors
 
       const res = await axios.post(
-        "https://talent-backend-4321.vercel.app/auth/login",
+        `${import.meta.env.VITE_API_BASE_URL}/auth/login`,
         data,
         { withCredentials: true }
       );
