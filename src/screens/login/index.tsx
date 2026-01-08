@@ -51,7 +51,7 @@ const Login = () => {
       clearErrors("root"); // Clear previous server errors
 
       const res = await axios.post(
-        "https://talent-backend-4321.vercel.app/api/v1/auth/login",
+        "https://talent-backend-4321.vercel.app/auth/login",
         data,
         { withCredentials: true }
       );
